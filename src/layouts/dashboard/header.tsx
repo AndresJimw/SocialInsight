@@ -2,7 +2,7 @@ import { Drawer } from "antd";
 import Color from "color";
 import { type CSSProperties, useState } from "react";
 
-import { IconButton, Iconify, SvgIcon } from "@/components/icon";
+import { IconButton, Iconify } from "@/components/icon";
 import LocalePicker from "@/components/locale-picker";
 import Logo from "@/components/logo";
 import { useSettings } from "@/store/settingStore";
@@ -63,7 +63,7 @@ export default function Header({ offsetTop = false }: Props) {
 								onClick={() => setDrawerOpen(true)}
 								className="h-10 w-10 md:hidden"
 							>
-								<SvgIcon icon="ic-menu" size="24" />
+								<Iconify icon="ic:baseline-menu" size={24} />
 							</IconButton>
 						) : (
 							<Logo />
@@ -76,7 +76,7 @@ export default function Header({ offsetTop = false }: Props) {
 					<div className="flex">
 						<SearchBar />
 						<LocalePicker />
-						<IconButton
+						{/* <IconButton
 							onClick={() =>
 								window.open("https://github.com/d3george/slash-admin")
 							}
@@ -87,7 +87,7 @@ export default function Header({ offsetTop = false }: Props) {
 							onClick={() => window.open("https://discord.gg/fXemAXVNDa")}
 						>
 							<Iconify icon="carbon:logo-discord" size={24} />
-						</IconButton>
+						</IconButton> */}
 						<SettingButton />
 						<AccountDropdown />
 					</div>

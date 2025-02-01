@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Iconify, SvgIcon } from "@/components/icon";
+import { Iconify } from "@/components/icon";
 
 import { useSettings } from "@/store/settingStore";
 import { cn } from "@/utils";
@@ -15,7 +15,7 @@ const renderIcon = (icon: string | React.ReactNode): React.ReactNode => {
 	if (typeof icon !== "string") return icon;
 
 	return icon.startsWith("ic") ? (
-		<SvgIcon icon={icon} size={24} className="ant-menu-item-icon" />
+		<Iconify icon={icon} size={24} className="ant-menu-item-icon" />
 	) : (
 		<Iconify icon={icon} size={24} className="ant-menu-item-icon" />
 	);

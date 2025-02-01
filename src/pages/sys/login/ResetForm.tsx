@@ -1,7 +1,7 @@
 import { Button, Form, Input } from "antd";
 import { useTranslation } from "react-i18next";
 
-import { SvgIcon } from "@/components/icon";
+import { Iconify } from "@/components/icon";
 
 import { ReturnButton } from "./components/ReturnButton";
 import {
@@ -22,7 +22,7 @@ function ResetForm() {
 	return (
 		<>
 			<div className="mb-8 text-center">
-				<SvgIcon icon="ic-reset-password" size="100" />
+				<Iconify icon="ic:baseline-reset-tv" size={100} />
 			</div>
 			<div className="mb-4 text-center text-2xl font-bold xl:text-3xl">
 				{t("sys.login.forgetFormTitle")}

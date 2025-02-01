@@ -17,13 +17,13 @@ export const LANGUAGE_MAP: Record<Locale, Language> = {
 	[LocalEnum.es_ES]: {
 		locale: LocalEnum.es_ES,
 		label: "Español",
-		icon: "ic-locale_es_ES",
+		icon: "circle-flags:ec",
 		antdLocal: es_ES,
 	},
 	[LocalEnum.en_US]: {
 		locale: LocalEnum.en_US,
 		label: "English",
-		icon: "ic-locale_en_US",
+		icon: "circle-flags:us",
 		antdLocal: en_US,
 	},
 };

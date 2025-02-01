@@ -10,7 +10,7 @@ import {
 import dayjs from "dayjs";
 import styled from "styled-components";
 
-import { SvgIcon } from "@/components/icon";
+import { Iconify } from "@/components/icon";
 import ProTag from "@/theme/antd/components/tag";
 import { useThemeToken } from "@/theme/hooks";
 
@@ -73,13 +73,17 @@ export default function TaskDetail({ task }: Props) {
 						<Radio.Group defaultValue={priority}>
 							<Space>
 								<Radio.Button value="High">
-									<SvgIcon icon="ic_rise" size={20} color={colorWarning} />
+									<Iconify
+										icon="ic:baseline-trending-up"
+										size={20}
+										color={colorWarning}
+									/>
 									<span>High</span>
 								</Radio.Button>
 
 								<Radio.Button value="Medium">
-									<SvgIcon
-										icon="ic_rise"
+									<Iconify
+										icon="ic:baseline-trending-up"
 										size={20}
 										color={colorSuccess}
 										className="rotate-90"
@@ -88,8 +92,8 @@ export default function TaskDetail({ task }: Props) {
 								</Radio.Button>
 
 								<Radio.Button value="Low">
-									<SvgIcon
-										icon="ic_rise"
+									<Iconify
+										icon="ic:baseline-trending-up"
 										size={20}
 										color={colorInfo}
 										className="rotate-180"
@@ -148,22 +152,22 @@ export default function TaskDetail({ task }: Props) {
 }
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 24px 20px 40px;
-  .item {
-    display: flex;
-    align-items: center;
-  }
-  .label {
-    text-align: left;
-    font-size: 0.75rem;
-    font-weight: 600;
-    width: 100px;
-    flex-shrink: 0;
-    color: rgb(99, 115, 129);
-    height: 40px;
-    line-height: 40px;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 24px 20px 40px;
+	.item {
+		display: flex;
+		align-items: center;
+	}
+	.label {
+		text-align: left;
+		font-size: 0.75rem;
+		font-weight: 600;
+		width: 100px;
+		flex-shrink: 0;
+		color: rgb(99, 115, 129);
+		height: 40px;
+		line-height: 40px;
+	}
 `;

@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 import { useBoolean, useEvent, useKeyPressEvent } from "react-use";
 import styled from "styled-components";
 
-import { IconButton, SvgIcon } from "@/components/icon";
+import { IconButton, Iconify } from "@/components/icon";
 import Scrollbar from "@/components/scrollbar";
 import { useFlattenedRoutes, useRouter } from "@/router/hooks";
 import ProTag from "@/theme/antd/components/tag";
@@ -138,7 +138,7 @@ export default function SearchBar() {
 					onClick={handleOpen}
 				>
 					<div className="flex items-center justify-center gap-2">
-						<SvgIcon icon="ic-search" size="20" />
+						<Iconify icon="ic:baseline-search" size={20} />
 						<span className="flex h-6 items-center justify-center rounded-md bg-[#fff] px-1.5 font-bold text-gray-800">
 							{" "}
 							⌘K{" "}
@@ -169,7 +169,7 @@ export default function SearchBar() {
 						placeholder="Search..."
 						variant="borderless"
 						autoFocus
-						prefix={<SvgIcon icon="ic-search" size="20" />}
+						prefix={<Iconify icon="ic:baseline-search" size={20} />}
 						suffix={
 							<IconButton
 								className="h-6 rounded-md bg-hover text-xs"
@@ -261,12 +261,12 @@ export default function SearchBar() {
 }
 
 const StyledListItemButton = styled.div<{ $themetoken: GlobalToken }>`
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  width: 100%;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border-bottom: ${(props) => `1px dashed ${props.$themetoken.colorBorder}`};
-  color: ${(props) => `${props.$themetoken.colorTextSecondary}`};
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	width: 100%;
+	padding: 8px 16px;
+	border-radius: 8px;
+	border-bottom: ${(props) => `1px dashed ${props.$themetoken.colorBorder}`};
+	color: ${(props) => `${props.$themetoken.colorTextSecondary}`};
 `;

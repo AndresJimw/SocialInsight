@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { Navigate, Outlet } from "react-router";
 
-import { SvgIcon } from "@/components/icon";
+import { Iconify } from "@/components/icon";
 import { CircleLoading } from "@/components/loading";
 
 import type { AppRouteObject } from "#/router";
@@ -29,7 +29,11 @@ const management: AppRouteObject = {
 	meta: {
 		label: "sys.menu.management",
 		icon: (
-			<SvgIcon icon="ic-management" className="ant-menu-item-icon" size="24" />
+			<Iconify
+				icon="ic:baseline-manage-accounts"
+				size={24}
+				className="ant-menu-item-icon"
+			/>
 		),
 		key: "/management",
 	},

@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 import CyanBlur from "@/assets/images/background/cyan-blur.png";
 import RedBlur from "@/assets/images/background/red-blur.png";
-import { IconButton, Iconify, SvgIcon } from "@/components/icon";
+import { IconButton, Iconify } from "@/components/icon";
 import { type Task, TaskPriority } from "@/pages/sys/others/kanban/types";
 import { useSettings } from "@/store/settingStore";
 import { useThemeToken } from "@/theme/hooks";
@@ -155,23 +155,28 @@ function KanbanTask({ index, task }: Props) {
 	);
 }
 
-// 在这里使用memo很重要，因为drag column时，不应该重复渲染内部的task
 export default memo(KanbanTask);
 
 type TaskPrioritySvgProps = {
 	taskPriority: TaskPriority;
 };
+
 function TaskPrioritySvg({ taskPriority }: TaskPrioritySvgProps) {
 	const { colorSuccess, colorInfo, colorWarning } = useThemeToken();
 	switch (taskPriority) {
 		case TaskPriority.HIGH:
 			return (
-				<SvgIcon icon="ic_rise" size={20} color={colorWarning} className="" />
+				<Iconify
+					icon="ic:baseline-trending-up"
+					size={20}
+					color={colorWarning}
+					className=""
+				/>
 			);
 		case TaskPriority.MEDIUM:
 			return (
-				<SvgIcon
-					icon="ic_rise"
+				<Iconify
+					icon="ic:baseline-trending-up"
 					size={20}
 					color={colorSuccess}
 					className="rotate-90"
@@ -179,8 +184,8 @@ function TaskPrioritySvg({ taskPriority }: TaskPrioritySvgProps) {
 			);
 		case TaskPriority.LOW:
 			return (
-				<SvgIcon
-					icon="ic_rise"
+				<Iconify
+					icon="ic:baseline-trending-up"
 					size={20}
 					color={colorInfo}
 					className="rotate-180"
@@ -190,14 +195,15 @@ function TaskPrioritySvg({ taskPriority }: TaskPrioritySvgProps) {
 			break;
 	}
 }
+
 const Container = styled.div<{ $isDragging: boolean; $themeMode: ThemeMode }>`
-  width: 248px;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 12px;
-  background-color: ${(props) => {
+	width: 248px;
+	border-radius: 12px;
+	padding: 16px;
+	margin-bottom: 16px;
+	font-weight: 400;
+	font-size: 12px;
+	background-color: ${(props) => {
 		if (props.$themeMode === ThemeMode.Light) {
 			return props.$isDragging
 				? "rgba(255, 255, 255, 0.48)"
@@ -205,12 +211,12 @@ const Container = styled.div<{ $isDragging: boolean; $themeMode: ThemeMode }>`
 		}
 		return props.$isDragging ? "rgba(22, 28, 36, 0.48)" : "rgb(22, 28, 36)";
 	}};
-  backdrop-filter: ${(props) => (props.$isDragging ? "blur(6px)" : "")};
+	backdrop-filter: ${(props) => (props.$isDragging ? "blur(6px)" : "")};
 
-  &:hover {
-    box-shadow: ${(props) =>
+	&:hover {
+		box-shadow: ${(props) =>
 			props.$themeMode === ThemeMode.Light
 				? "rgba(145, 158, 171, 0.16) 0px 20px 40px -4px"
 				: "rgba(0, 0, 0, 0.16) 0px 20px 40px -4px"};
-  }
+	}
 `;

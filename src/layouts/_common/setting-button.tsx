@@ -14,7 +14,7 @@ import screenfull from "screenfull";
 import CyanBlur from "@/assets/images/background/cyan-blur.png";
 import RedBlur from "@/assets/images/background/red-blur.png";
 import { varHover } from "@/components/animate/variants/action";
-import { IconButton, Iconify, SvgIcon } from "@/components/icon";
+import { IconButton, Iconify } from "@/components/icon";
 import { useSettingActions, useSettings } from "@/store/settingStore";
 import { colorPrimarys } from "@/theme/antd/theme";
 import { useThemeToken } from "@/theme/hooks";
@@ -164,8 +164,9 @@ export default function SettingButton() {
 						<div className="flex items-center justify-center">
 							{isFullscreen ? (
 								<>
-									<SvgIcon
-										icon="ic-settings-exit-fullscreen"
+									<Iconify
+										icon="ic:baseline-fullscreen-exit"
+										size={24}
 										color={colorPrimary}
 										className="!m-0"
 									/>
@@ -173,7 +174,11 @@ export default function SettingButton() {
 								</>
 							) : (
 								<>
-									<SvgIcon icon="ic-settings-fullscreen" className="!m-0" />
+									<Iconify
+										icon="ic:baseline-fullscreen"
+										size={24}
+										className="!m-0"
+									/>
 									<span className="ml-2 text-gray">FullScreen</span>
 								</>
 							)}
@@ -195,9 +200,9 @@ export default function SettingButton() {
 								onClick={() => setThemeMode(ThemeMode.Light)}
 								className="flex h-20 w-full cursor-pointer items-center justify-center"
 							>
-								<SvgIcon
-									icon="ic-settings-mode-sun"
-									size="24"
+								<Iconify
+									icon="ic:baseline-wb-sunny"
+									size={24}
 									color={themeMode === ThemeMode.Light ? colorPrimary : ""}
 								/>
 							</Card>
@@ -205,9 +210,9 @@ export default function SettingButton() {
 								onClick={() => setThemeMode(ThemeMode.Dark)}
 								className="flex h-20 w-full cursor-pointer items-center justify-center"
 							>
-								<SvgIcon
-									icon="ic-settings-mode-moon"
-									size="24"
+								<Iconify
+									icon="ic:baseline-nightlight"
+									size={24}
 									color={themeMode === ThemeMode.Dark ? colorPrimary : ""}
 								/>
 							</Card>

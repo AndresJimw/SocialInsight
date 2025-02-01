@@ -13,7 +13,7 @@ import type { ColumnsType } from "antd/es/table";
 
 import { fakeAvatars } from "@/_mock/utils";
 import Card from "@/components/card";
-import { IconButton, Iconify, SvgIcon } from "@/components/icon";
+import { IconButton, Iconify } from "@/components/icon";
 import Scrollbar from "@/components/scrollbar";
 import { useUserInfo } from "@/store/userStore";
 import ProTag from "@/theme/antd/components/tag";
@@ -249,7 +249,7 @@ export default function ProfileTab() {
 											</Typography.Text>
 
 											<div className="mt-2 flex items-center gap-2">
-												<SvgIcon icon="ic_file_pdf" size={30} />
+												<Iconify icon="ic:baseline-picture-as-pdf" size={30} />
 												<span className="font-medium opacity-60">
 													invoice.pdf
 												</span>
