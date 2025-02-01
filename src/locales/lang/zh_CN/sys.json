@@ -113,19 +113,6 @@
 			"functions": "功能",
 			"clipboard": "剪贴板",
 			"token_expired": "Token失效",
-			"menulevel": {
-				"index": "多级菜单",
-				"1a": "多级菜单 1a",
-				"1b": {
-					"index": "多级菜单 1b",
-					"2a": "多级菜单 2a",
-					"2b": {
-						"index": "多级菜单 2b",
-						"3a": "多级菜单 3a",
-						"3b": "多级菜单 3b"
-					}
-				}
-			},
 			"disabled": "项目禁用",
 			"label": "项目标签",
 			"frame": "项目外部链接",

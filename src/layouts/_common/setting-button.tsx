@@ -14,7 +14,7 @@ import screenfull from "screenfull";
 import CyanBlur from "@/assets/images/background/cyan-blur.png";
 import RedBlur from "@/assets/images/background/red-blur.png";
 import { varHover } from "@/components/animate/variants/action";
-import { IconButton, SvgIcon } from "@/components/icon";
+import { IconButton, Iconify, SvgIcon } from "@/components/icon";
 import { useSettingActions, useSettings } from "@/store/settingStore";
 import { colorPrimarys } from "@/theme/antd/theme";
 import { useThemeToken } from "@/theme/hooks";
@@ -135,7 +135,7 @@ export default function SettingButton() {
 					onClick={() => setDrawerOpen(true)}
 				>
 					<IconButton className="h-10 w-10">
-						<SvgIcon icon="ic-setting" size="24" />
+						<Iconify icon="solar:settings-bold-duotone" size={24} />
 					</IconButton>
 				</m.div>
 			</div>

@@ -14,7 +14,7 @@ function App() {
 			<AntdApp>
 				<MotionLazy>
 					<Helmet>
-						<title>Slash Admin</title>
+						<title>Social Insight</title>
 						<link rel="icon" href={Logo} />
 					</Helmet>
 					<Toast />

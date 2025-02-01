@@ -14,7 +14,7 @@ type SettingsType = {
 };
 type SettingStore = {
 	settings: SettingsType;
-	// 使用 actions 命名空间来存放所有的 action
+	// actions action
 	actions: {
 		setSettings: (settings: SettingsType) => void;
 		clearSettings: () => void;
