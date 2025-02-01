@@ -53,3 +53,18 @@ Contributions are welcome! If you want to contribute to SocialInsight, follow th
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+## Git Contribution submission specification
+
+- `feat` new features
+- `fix` fix the
+- `docs` documentation or comments
+- `style` code format (changes that do not affect code execution)
+- `refactor` refactor
+- `perf` performance optimization
+- `revert` revert commit
+- `test` test related
+- `chore` changes in the construction process or auxiliary tools
+- `ci` modify CI configuration and scripts
+- `types` type definition file changes
+- `wip` in development
