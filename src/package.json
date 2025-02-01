@@ -1,5 +1,5 @@
 {
-	"name": "slash-admin",
+	"name": "socialinsight",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -97,6 +97,8 @@
 		"workerDirectory": "public"
 	},
 	"commitlint": {
-		"extends": ["@commitlint/config-conventional"]
+		"extends": [
+			"@commitlint/config-conventional"
+		]
 	}
 }
