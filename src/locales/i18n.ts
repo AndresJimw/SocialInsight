@@ -5,7 +5,7 @@ import { initReactI18next } from "react-i18next";
 import { getStringItem } from "@/utils/storage";
 
 import en_US from "./lang/en_US";
-import zh_CN from "./lang/zh_CN";
+import es_ES from "./lang/es_ES";
 
 import { LocalEnum, StorageEnum } from "#/enum";
 
@@ -28,7 +28,7 @@ i18n
 		},
 		resources: {
 			en_US: { translation: en_US },
-			zh_CN: { translation: zh_CN },
+			es_ES: { translation: es_ES },
 		},
 	});
 

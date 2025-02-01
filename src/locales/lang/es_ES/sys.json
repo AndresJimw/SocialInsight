@@ -1,0 +1,134 @@
+{
+	"sys": {
+		"api": {
+			"operationSuccess": "Operación exitosa",
+			"operationFailed": "Operación fallida",
+			"errorTip": "Consejo de error",
+			"successTip": "Consejo de éxito",
+			"errorMessage": "La operación falló, el sistema está presentando problemas.",
+			"timeoutMessage": "La sesión ha caducado, por favor inicia sesión nuevamente.",
+			"apiTimeoutMessage": "El tiempo de espera de la solicitud ha expirado, por favor recarga la página e inténtalo de nuevo.",
+			"apiRequestFailed": "La solicitud a la interfaz falló, por favor inténtalo más tarde.",
+			"networkException": "Anomalía en la red",
+			"networkExceptionMsg": "Por favor verifica si tu conexión a Internet es estable. Parece que hay un problema de red.",
+
+			"errMsg401": "El usuario no tiene permiso (token, nombre de usuario o contraseña incorrectos).",
+			"errMsg403": "El usuario está autorizado, pero el acceso está prohibido.",
+			"errMsg404": "Error de solicitud de red, el recurso no se encontró.",
+			"errMsg405": "Error de solicitud de red, método de solicitud no permitido.",
+			"errMsg408": "Tiempo de espera de la solicitud de red agotado.",
+			"errMsg500": "Error del servidor, por favor contacta al administrador.",
+			"errMsg501": "La red no está implementada.",
+			"errMsg502": "Error de red.",
+			"errMsg503": "El servicio no está disponible, el servidor está temporalmente sobrecargado o en mantenimiento.",
+			"errMsg504": "Tiempo de espera de la red agotado.",
+			"errMsg505": "La versión de HTTP no soporta la solicitud."
+		},
+		"login": {
+			"backSignIn": "Volver a iniciar sesión",
+			"mobileSignInFormTitle": "Inicio de sesión móvil",
+			"qrSignInFormTitle": "Inicio de sesión con código QR",
+			"signInFormTitle": "Iniciar sesión",
+			"signUpFormTitle": "Registrarse",
+			"forgetFormTitle": "Restablecer contraseña",
+
+			"signInPrimaryTitle": "Hola, Bienvenido de nuevo",
+			"signInSecondTitle": "Sistema de gestión",
+			"signInTitle": "",
+			"signInDesc": "Ingresa tus datos personales y empieza ahora.",
+			"policy": "Estoy de acuerdo con la Política de Privacidad de xxx",
+			"scanSign": "Escanea el código para iniciar sesión",
+			"forgetFormSecondTitle": "Ingresa el correo electrónico asociado a tu cuenta y te enviaremos un enlace para restablecer tu contraseña.",
+
+			"loginButton": "Iniciar sesión",
+			"registerButton": "Registrarse",
+			"rememberMe": "Recuérdame",
+			"forgetPassword": "¿Olvidaste tu contraseña?",
+			"otherSignIn": "Iniciar sesión con",
+			"sendSmsButton": "Enviar código SMS",
+			"sendSmsText": "Reintentar en {{second}}s",
+			"sendEmailButton": "Enviar correo electrónico",
+
+			"loginSuccessTitle": "Inicio de sesión exitoso",
+			"loginSuccessDesc": "Bienvenido de nuevo",
+
+			"accountPlaceholder": "Ingresa tu nombre de usuario",
+			"passwordPlaceholder": "Ingresa tu contraseña",
+			"confirmPasswordPlaceholder": "Confirma tu contraseña",
+			"emaildPlaceholder": "Ingresa tu correo electrónico",
+			"smsPlaceholder": "Ingresa el código SMS",
+			"mobilePlaceholder": "Ingresa tu número de móvil",
+			"policyPlaceholder": "Regístrate después de aceptar",
+			"diffPwd": "Las contraseñas no coinciden.",
+
+			"userName": "Nombre de usuario",
+			"password": "Contraseña",
+			"confirmPassword": "Confirmar contraseña",
+			"email": "Correo electrónico",
+			"smsCode": "Código SMS",
+			"mobile": "Móvil",
+
+			"registerAndAgree": "Al registrarme, acepto los",
+			"termsOfService": " Términos de servicio ",
+			"privacyPolicy": " Política de privacidad ",
+			"logout": "Cerrar sesión"
+		},
+		"tab": {
+			"fullscreen": "Pantalla completa",
+			"refresh": "Actualizar",
+			"close": "Cerrar",
+			"closeOthers": "Cerrar otros",
+			"closeAll": "Cerrar todo",
+			"closeLeft": "Cerrar a la izquierda",
+			"closeRight": "Cerrar a la derecha"
+		},
+		"menu": {
+			"dashboard": "Panel de control",
+			"workbench": "Área de trabajo",
+			"analysis": "Análisis",
+			"management": "Gestión",
+			"user": {
+				"index": "Usuarios",
+				"profile": "Perfil",
+				"account": "Cuenta"
+			},
+			"system": {
+				"index": "Sistema",
+				"organization": "Organización",
+				"permission": "Permisos",
+				"role": "Roles",
+				"user": "Usuarios",
+				"user_detail": "Detalle del usuario"
+			},
+			"blog": "Blog",
+			"components": "Componentes",
+			"icon": "Íconos",
+			"animate": "Animaciones",
+			"scroll": "Desplazamiento",
+			"markdown": "Markdown",
+			"editor": "Editor",
+			"i18n": "Multiidioma",
+			"upload": "Subir",
+			"chart": "Gráficas",
+			"toast": "Notificaciones",
+			"functions": "Funciones",
+			"clipboard": "Portapapeles",
+			"token_expired": "Token caducado",
+			"disabled": "Elemento deshabilitado",
+			"label": "Etiqueta del elemento",
+			"frame": "Elemento externo",
+			"external_link": "Enlace externo",
+			"iframe": "Iframe",
+			"blank": "En blanco",
+			"calendar": "Calendario",
+			"kanban": "Kanban",
+			"error": {
+				"index": "Página de error",
+				"403": "403",
+				"404": "404",
+				"500": "500"
+			}
+		},
+		"docs": "Documentación"
+	}
+}

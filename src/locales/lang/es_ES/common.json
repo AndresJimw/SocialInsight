@@ -1,0 +1,22 @@
+{
+	"common": {
+		"okText": "OK",
+		"closeText": "Cerrar",
+		"cancelText": "Cancelar",
+		"loadingText": "Cargando...",
+		"saveText": "Guardar",
+		"delText": "Eliminar",
+		"resetText": "Restablecer",
+		"searchText": "Buscar",
+		"queryText": "Buscar",
+
+		"inputText": "Por favor ingrese",
+		"chooseText": "Por favor elija",
+
+		"redo": "Actualizar",
+		"back": "Atrás",
+
+		"light": "Claro",
+		"dark": "Oscuro"
+	}
+}
