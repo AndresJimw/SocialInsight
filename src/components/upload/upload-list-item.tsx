@@ -3,11 +3,10 @@ import type { ItemRender } from "antd/es/upload/interface";
 import { m } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import { varFade } from "@/components/animate/variants";
-import { Iconify, SvgIcon } from "@/components/icon";
+import { Iconify } from "@/components/icon";
 import { fBytes } from "@/utils/format-number";
 
-import { getBlobUrl, getFileFormat, getFileThumb } from "./utils";
+import { getBlobUrl, getFileFormat } from "./utils";
 
 type Props = {
 	file: Parameters<ItemRender>["1"];
@@ -21,7 +20,6 @@ export default function UploadListItem({
 	thumbnail = false,
 }: Props) {
 	const { name, size } = file;
-	const thumb = getFileThumb(name);
 	const format = getFileFormat(name);
 	const [imgThumbUrl, setImgThumbUrl] = useState("");
 
@@ -54,10 +52,8 @@ export default function UploadListItem({
 			style={{ width: 80, height: 80, marginTop: "8px", marginRight: "8px" }}
 		>
 			<Tooltip title={name}>
-				{format === "img" ? (
+				{format === "img" && (
 					<Image src={imgThumbUrl} preview={false} width={40} height={40} />
-				) : (
-					<SvgIcon icon={thumb} size={40} />
 				)}
 			</Tooltip>
 			<div className="absolute right-0 top-0">{closeButton}</div>
@@ -74,10 +70,8 @@ export default function UploadListItem({
 			}}
 			style={{ marginTop: "8px" }}
 		>
-			{format === "img" ? (
+			{format === "img" && (
 				<Image src={imgThumbUrl} preview={false} width={32} height={32} />
-			) : (
-				<SvgIcon icon={thumb} size={32} />
 			)}
 			<div className="ml-4 flex flex-col">
 				<Typography.Text className="!text-sm !font-medium">
@@ -91,12 +85,7 @@ export default function UploadListItem({
 		</Card>
 	);
 	return (
-		<m.div
-			initial="initial"
-			animate="animate"
-			exit="exit"
-			variants={varFade().inUp}
-		>
+		<m.div initial="initial" animate="animate" exit="exit">
 			{thumbnail ? thumbList : cardList}
 		</m.div>
 	);
