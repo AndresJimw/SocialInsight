@@ -19,26 +19,32 @@ SocialInsight is a web application designed to monitor and analyze public commen
    ```sh
    cd SocialInsight
    ```
-3. Install the necessary dependencies:
-   ```sh
-   npm install
-   ```
-4. Configure environment variables:
-   - Create a `.env` file in the root directory of the project.
-   - Add your Facebook access token to the `.env` file:
-   ```env
-   FACEBOOK_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
-   ```
 
-## Usage
+### Install Dependencies
 
-1. Start the application:
-   ```sh
-   npm start
-   ```
-2. Open your browser and navigate to `http://localhost:3000`.
-3. Enter the name or search term in the provided field and click "Search".
-4. Review the presented results and graphs.
+In the project's root directory, run the following command to install project dependencies:
+
+```bash
+pnpm install
+```
+
+### Start the Development Server
+
+Run the following command to start the development server:
+
+```bash
+pnpm dev
+```
+
+Visit [http://localhost:3001](http://localhost:3001) to view your application.
+
+### Build for Production
+
+Run the following command to build the production version:
+
+```bash
+pnpm build
+```
 
 ## Contributing
 
