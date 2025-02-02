@@ -219,45 +219,6 @@ const COMPONENTS_PERMISSION = {
 	],
 };
 
-const ERRORS_PERMISSION = {
-	id: "9406067785553476",
-	parentId: "",
-	label: "sys.menu.error.index",
-	name: "Error",
-	icon: "bxs:error-alt",
-	type: PermissionType.CATALOGUE,
-	route: "error",
-	order: 6,
-	children: [
-		{
-			id: "8557056851997154",
-			parentId: "9406067785553476",
-			label: "sys.menu.error.403",
-			name: "403",
-			type: PermissionType.MENU,
-			route: "403",
-			component: "/sys/error/Page403.tsx",
-		},
-		{
-			id: "5095669208159005",
-			parentId: "9406067785553476",
-			label: "sys.menu.error.404",
-			name: "404",
-			type: PermissionType.MENU,
-			route: "404",
-			component: "/sys/error/Page404.tsx",
-		},
-		{
-			id: "0225992135973772",
-			parentId: "9406067785553476",
-			label: "sys.menu.error.500",
-			name: "500",
-			type: PermissionType.MENU,
-			route: "500",
-			component: "/sys/error/Page500.tsx",
-		},
-	],
-};
 const OTHERS_PERMISSION = [
 	{
 		id: "3981225257359246",
@@ -285,7 +246,6 @@ export const PERMISSION_LIST = [
 	DASHBOARD_PERMISSION,
 	MANAGEMENT_PERMISSION,
 	COMPONENTS_PERMISSION,
-	ERRORS_PERMISSION,
 	...OTHERS_PERMISSION,
 ];
 
