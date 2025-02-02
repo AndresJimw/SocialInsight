@@ -5,22 +5,16 @@ import Logo from "@/assets/images/logo.png";
 import Router from "@/router/index";
 import AntdConfig from "@/theme/antd";
 
-import { MotionLazy } from "./components/animate/motion-lazy";
-import Toast from "./components/toast";
-
 function App() {
 	return (
 		<AntdConfig>
 			<AntdApp>
-				<MotionLazy>
-					<Helmet>
-						<title>Social Insight</title>
-						<link rel="icon" href={Logo} />
-					</Helmet>
-					<Toast />
+				<Helmet>
+					<title>Social Insight</title>
+					<link rel="icon" href={Logo} />
+				</Helmet>
 
-					<Router />
-				</MotionLazy>
+				<Router />
 			</AntdApp>
 		</AntdConfig>
 	);

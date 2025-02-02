@@ -76,7 +76,7 @@ const DASHBOARD_PERMISSION = {
 	parentId: "",
 	label: "sys.menu.dashboard",
 	name: "Dashboard",
-	icon: "ic-analysis",
+	icon: "ic:baseline-analytics",
 	type: PermissionType.CATALOGUE,
 	route: "dashboard",
 	order: 1,
@@ -106,7 +106,7 @@ const MANAGEMENT_PERMISSION = {
 	parentId: "",
 	label: "sys.menu.management",
 	name: "Management",
-	icon: "ic-management",
+	icon: "ic:baseline-manage-accounts",
 	type: PermissionType.CATALOGUE,
 	route: "management",
 	order: 2,
@@ -290,36 +290,6 @@ const COMPONENTS_PERMISSION = {
 		},
 	],
 };
-const FUNCTIONS_PERMISSION = {
-	id: "8132044808088488",
-	parentId: "",
-	label: "sys.menu.functions",
-	name: "functions",
-	icon: "solar:plain-2-bold-duotone",
-	type: PermissionType.CATALOGUE,
-	route: "functions",
-	order: 4,
-	children: [
-		{
-			id: "3667930780705750",
-			parentId: "8132044808088488",
-			label: "sys.menu.clipboard",
-			name: "Clipboard",
-			type: PermissionType.MENU,
-			route: "clipboard",
-			component: "/functions/clipboard/index.tsx",
-		},
-		{
-			id: "3667930780705751",
-			parentId: "8132044808088488",
-			label: "sys.menu.token_expired",
-			name: "Token Expired",
-			type: PermissionType.MENU,
-			route: "token-expired",
-			component: "/functions/token-expired/index.tsx",
-		},
-	],
-};
 
 const ERRORS_PERMISSION = {
 	id: "9406067785553476",
@@ -387,7 +357,6 @@ export const PERMISSION_LIST = [
 	DASHBOARD_PERMISSION,
 	MANAGEMENT_PERMISSION,
 	COMPONENTS_PERMISSION,
-	FUNCTIONS_PERMISSION,
 	ERRORS_PERMISSION,
 	...OTHERS_PERMISSION,
 ];
@@ -411,11 +380,7 @@ const TEST_ROLE = {
 	status: BasicStatus.ENABLE,
 	order: 2,
 	desc: "test",
-	permission: [
-		DASHBOARD_PERMISSION,
-		COMPONENTS_PERMISSION,
-		FUNCTIONS_PERMISSION,
-	],
+	permission: [DASHBOARD_PERMISSION, COMPONENTS_PERMISSION],
 };
 export const ROLE_LIST = [ADMIN_ROLE, TEST_ROLE];
 

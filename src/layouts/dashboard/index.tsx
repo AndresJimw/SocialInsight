@@ -100,42 +100,42 @@ const scrollbarStyles = {
 };
 
 const ScrollbarStyleWrapper = styled.div<{ $themeMode?: ThemeMode }>`
-  ::-webkit-scrollbar {
-    width: 8px;
-    top: 32px;
-  }
+	::-webkit-scrollbar {
+		width: 8px;
+		top: 32px;
+	}
 
-  ::-webkit-scrollbar-track {
-    border-radius: 8px;
-    background: ${({ $themeMode }) =>
+	::-webkit-scrollbar-track {
+		border-radius: 8px;
+		background: ${({ $themeMode }) =>
 			$themeMode === ThemeMode.Dark
 				? scrollbarStyles.dark.track
 				: scrollbarStyles.light.track};
-  }
+	}
 
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: ${({ $themeMode }) =>
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: ${({ $themeMode }) =>
 			$themeMode === ThemeMode.Dark
 				? scrollbarStyles.dark.thumb
 				: scrollbarStyles.light.thumb};
-  }
+	}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: ${({ $themeMode }) =>
+	::-webkit-scrollbar-thumb:hover {
+		background: ${({ $themeMode }) =>
 			$themeMode === ThemeMode.Dark
 				? scrollbarStyles.dark.thumbHover
 				: scrollbarStyles.light.thumbHover};
-  }
+	}
 
-  .simplebar-scrollbar::before {
-    background: ${({ $themeMode }) =>
+	.simplebar-scrollbar::before {
+		background: ${({ $themeMode }) =>
 			$themeMode === ThemeMode.Dark
 				? scrollbarStyles.dark.thumb
 				: scrollbarStyles.light.thumb};
-  }
+	}
 
-  .simplebar-scrollbar.simplebar-visible:before {
-    opacity: 1;
-  }
+	.simplebar-scrollbar.simplebar-visible:before {
+		opacity: 1;
+	}
 `;
