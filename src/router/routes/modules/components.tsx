@@ -6,7 +6,6 @@ import { CircleLoading } from "@/components/loading";
 
 import type { AppRouteObject } from "#/router";
 
-const IconPage = lazy(() => import("@/pages/components/icon"));
 const ChartPage = lazy(() => import("@/pages/components/chart"));
 
 const components: AppRouteObject = {
@@ -32,11 +31,6 @@ const components: AppRouteObject = {
 		{
 			index: true,
 			element: <Navigate to="icon" replace />,
-		},
-		{
-			path: "icon",
-			element: <IconPage />,
-			meta: { label: "sys.menu.icon", key: "/components/icon" },
 		},
 		{
 			path: "chart",

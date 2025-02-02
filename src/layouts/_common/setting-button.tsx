@@ -13,7 +13,6 @@ import screenfull from "screenfull";
 
 import CyanBlur from "@/assets/images/background/cyan-blur.png";
 import RedBlur from "@/assets/images/background/red-blur.png";
-import { varHover } from "@/components/animate/variants/action";
 import { IconButton, Iconify } from "@/components/icon";
 import { useSettingActions, useSettings } from "@/store/settingStore";
 import { colorPrimarys } from "@/theme/antd/theme";
@@ -131,7 +130,6 @@ export default function SettingButton() {
 					}}
 					whileTap="tap"
 					whileHover="hover"
-					variants={varHover(1.05)}
 					onClick={() => setDrawerOpen(true)}
 				>
 					<IconButton className="h-10 w-10">
