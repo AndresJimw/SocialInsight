@@ -6,10 +6,7 @@ import { Iconify } from "@/components/icon";
 import { useUserInfo } from "@/store/userStore";
 import { useThemeToken } from "@/theme/hooks";
 
-import ConnectionsTab from "./connections-tab";
 import ProfileTab from "./profile-tab";
-import ProjectsTab from "./projects-tab";
-import TeamsTab from "./teams-tab";
 
 function UserProfile() {
 	const { avatar, username } = useUserInfo();
@@ -27,21 +24,6 @@ function UserProfile() {
 			icon: <Iconify icon="solar:user-id-bold" size={24} className="mr-2" />,
 			title: "Profile",
 			content: <ProfileTab />,
-		},
-		{
-			icon: <Iconify icon="mingcute:profile-fill" size={24} className="mr-2" />,
-			title: "Teams",
-			content: <TeamsTab />,
-		},
-		{
-			icon: <Iconify icon="mingcute:profile-fill" size={24} className="mr-2" />,
-			title: "Projects",
-			content: <ProjectsTab />,
-		},
-		{
-			icon: <Iconify icon="mingcute:profile-fill" size={24} className="mr-2" />,
-			title: "Connections",
-			content: <ConnectionsTab />,
 		},
 	];
 

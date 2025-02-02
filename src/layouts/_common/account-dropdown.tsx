@@ -60,7 +60,10 @@ export default function AccountDropdown() {
 	const items: MenuProps["items"] = [
 		{
 			label: (
-				<NavLink to="https://docs-admin.slashspaces.com/" target="_blank">
+				<NavLink
+					to="https://github.com/AndresJimw/SocialInsight/blob/main/README.md"
+					target="_blank"
+				>
 					{t("sys.docs")}
 				</NavLink>
 			),

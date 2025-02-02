@@ -25,12 +25,12 @@ export default function PageError({
 		replace(HOMEPAGE);
 	};
 	return (
-		<div>
+		<div className="m-14">
 			<Helmet>
 				<title>Sorry, Page error occurred!</title>
 			</Helmet>
 
-			<div className="m-auto flex h-screen max-w-[400px] items-center justify-center">
+			<div className="m-auto h-screen max-w-[400px] items-center justify-center">
 				<m.div>
 					<Typography.Title level={3} className="text-center">
 						Sorry, Page error occurred!
